@@ -51,7 +51,7 @@ function EventsPage() {
       if (queryParams.showFull !== '') qp.append('showFull', queryParams.showFull);
       if (queryParams.published !== '') qp.append('published', queryParams.published);
 
-      const res = await fetch(`https://csc309website.onrender.com:3000/events?${qp.toString()}`, {
+      const res = await fetch(`https://csc309website.onrender.com/events?${qp.toString()}`, {
         method: 'GET',
         headers: {
           'Content-Type': 'application/json',

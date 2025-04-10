@@ -47,7 +47,7 @@ function EventManager() {
 
     try {
       setLoading(true);
-      const res = await fetch(`https://csc309website.onrender.com:3000/events/${searchId}`, {
+      const res = await fetch(`https://csc309website.onrender.com/events/${searchId}`, {
         method: 'GET',
         headers: {
           'Content-Type': 'application/json',
@@ -88,7 +88,7 @@ function EventManager() {
     setError('');
 
     try {
-      const res = await fetch(`https://csc309website.onrender.com:3000/events/${eventData.id}`, {
+      const res = await fetch(`https://csc309website.onrender.com/events/${eventData.id}`, {
         method: 'PATCH',
         headers: {
           'Content-Type': 'application/json',

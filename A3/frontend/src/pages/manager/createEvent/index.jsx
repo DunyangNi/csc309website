@@ -68,7 +68,7 @@ function CreateEventPage() {
         body.capacity = Number(capacity);
       }
 
-      const res = await fetch('https://csc309website.onrender.com:3000/events', {
+      const res = await fetch('https://csc309website.onrender.com/events', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',

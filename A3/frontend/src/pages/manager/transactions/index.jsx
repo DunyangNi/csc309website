@@ -56,7 +56,7 @@ function TransactionsPage() {
       if (queryParams.amount) qp.append('amount', queryParams.amount);
       if (queryParams.operator) qp.append('operator', queryParams.operator);
 
-      const res = await fetch(`https://csc309website.onrender.com:3000/transactions?${qp.toString()}`, {
+      const res = await fetch(`https://csc309website.onrender.com/transactions?${qp.toString()}`, {
         method: 'GET',
         headers: {
           'Content-Type': 'application/json',

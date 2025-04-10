@@ -32,7 +32,7 @@ const Login = () => {
     queryClient.clear()
 
     try {
-      const response = await fetch('https://csc309website.onrender.com:3000/auth/tokens', {
+      const response = await fetch('https://csc309website.onrender.com/auth/tokens', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
@@ -52,7 +52,7 @@ const Login = () => {
       alert('Login successful!')
       localStorage.setItem('access_token', data.token)
 
-      const userResponse = await fetch('https://csc309website.onrender.com:3000/users/me', {
+      const userResponse = await fetch('https://csc309website.onrender.com/users/me', {
         method: 'GET',
         headers: {
           'Content-Type': 'application/json',

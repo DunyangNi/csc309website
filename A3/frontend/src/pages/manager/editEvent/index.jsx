@@ -81,7 +81,7 @@ function EditEventPage() {
   const fetchEventData = async () => {
     try {
       setLoading(true);
-      const res = await fetch(`https://csc309website.onrender.com:3000/events/${eventId}`, {
+      const res = await fetch(`https://csc309website.onrender.com/events/${eventId}`, {
         method: 'GET',
         headers: {
           'Content-Type': 'application/json',
@@ -152,7 +152,7 @@ function EditEventPage() {
     setLoading(true);
 
     try {
-      const res = await fetch(`https://csc309website.onrender.com:3000/events/${eventId}`, {
+      const res = await fetch(`https://csc309website.onrender.com/events/${eventId}`, {
         method: 'PATCH',
         headers: {
           'Content-Type': 'application/json',

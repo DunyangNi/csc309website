@@ -7,7 +7,7 @@ async function fetchPromotions(queryParams, setPromotions, setTotalCount, setErr
     if (queryParams.name) qp.append('name', queryParams.name);
     if (queryParams.type) qp.append('type', queryParams.type);
 
-    const res = await fetch(`https://csc309website.onrender.com:3000/promotions?${qp.toString()}`, {
+    const res = await fetch(`https://csc309website.onrender.com/promotions?${qp.toString()}`, {
       method: 'GET',
       headers: {
         'Content-Type': 'application/json',

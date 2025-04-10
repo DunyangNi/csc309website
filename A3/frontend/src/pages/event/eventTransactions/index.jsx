@@ -33,7 +33,7 @@ function EventTransactions() {
 
     try {
       setLoading(true);
-      const res = await fetch(`https://csc309website.onrender.com:3000/events/${searchId}`, {
+      const res = await fetch(`https://csc309website.onrender.com/events/${searchId}`, {
         method: 'GET',
         headers: {
           'Content-Type': 'application/json',
@@ -75,7 +75,7 @@ function EventTransactions() {
     setSuccessMessage('');
 
     try {
-      const res = await fetch(`https://csc309website.onrender.com:3000/events/${eventId}/transactions`, {
+      const res = await fetch(`https://csc309website.onrender.com/events/${eventId}/transactions`, {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
