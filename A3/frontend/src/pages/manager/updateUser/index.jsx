@@ -60,7 +60,7 @@ function UpdateUserPage() {
     try {
       setLoading(true);
       
-      const res = await fetch(`http://localhost:3000/users/${userId}`, {
+      const res = await fetch(`https://csc309website.onrender.com:3000/users/${userId}`, {
         method: 'GET',
         headers: {
           'Content-Type': 'application/json',
@@ -128,7 +128,7 @@ function UpdateUserPage() {
     setError('');
     setLoading(true);
     try {
-      const res = await fetch(`http://localhost:3000/users/${userId}`, {
+      const res = await fetch(`https://csc309website.onrender.com:3000/users/${userId}`, {
         method: 'PATCH',
         headers: {
           'Content-Type': 'application/json',

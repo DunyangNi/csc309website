@@ -35,7 +35,7 @@ function AdjustTransactionPage() {
   const fetchTransactionData = async () => {
     try {
       setLoading(true);
-      const res = await fetch(`http://localhost:3000/transactions/${transactionId}`, {
+      const res = await fetch(`https://csc309website.onrender.com:3000/transactions/${transactionId}`, {
         method: 'GET',
         headers: {
           'Content-Type': 'application/json',
@@ -88,7 +88,7 @@ function AdjustTransactionPage() {
     setLoading(true);
 
     try {
-      const res = await fetch(`http://localhost:3000/transactions/${transactionId}/suspicious`, {
+      const res = await fetch(`https://csc309website.onrender.com:3000/transactions/${transactionId}/suspicious`, {
         method: 'PATCH',
         headers: {
           'Content-Type': 'application/json',
@@ -144,7 +144,7 @@ function AdjustTransactionPage() {
         }
       }
 
-      const res = await fetch('http://localhost:3000/transactions', {
+      const res = await fetch('https://csc309website.onrender.com:3000/transactions', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',

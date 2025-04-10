@@ -28,7 +28,7 @@ function EventUserManagement() {
 
     try {
       setLoading(true);
-      const res = await fetch(`http://localhost:3000/events/${searchId}`, {
+      const res = await fetch(`https://csc309website.onrender.com:3000/events/${searchId}`, {
         method: 'GET',
         headers: {
           'Content-Type': 'application/json',
@@ -69,7 +69,7 @@ function EventUserManagement() {
     setError('');
 
     try {
-      const res = await fetch(`http://localhost:3000/events/${eventId}/guests`, {
+      const res = await fetch(`https://csc309website.onrender.com:3000/events/${eventId}/guests`, {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
@@ -84,7 +84,7 @@ function EventUserManagement() {
       }
 
       // Fetch the updated event data to get the complete guest information
-      const updatedEventRes = await fetch(`http://localhost:3000/events/${eventId}`, {
+      const updatedEventRes = await fetch(`https://csc309website.onrender.com:3000/events/${eventId}`, {
         headers: {
           Authorization: `Bearer ${localStorage.getItem('access_token')}`,
         },

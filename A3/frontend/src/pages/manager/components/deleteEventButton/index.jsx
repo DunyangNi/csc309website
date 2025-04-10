@@ -8,7 +8,7 @@ function DeleteEventButton({ eventId, setError, currentPath, setEvents }) {
 
   async function deleteEvent(eventId, setError) {
     try {
-      const res = await fetch(`http://localhost:3000/events/${eventId}`, {
+      const res = await fetch(`https://csc309website.onrender.com:3000/events/${eventId}`, {
         method: 'DELETE',
         headers: {
           Authorization: `Bearer ${localStorage.getItem('access_token')}`,

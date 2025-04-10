@@ -1,6 +1,6 @@
 async function addOrganizer(eventId, utorid, setError, currentPath, navigate, setOrga) {
   try {
-    const res = await fetch(`http://localhost:3000/events/${eventId}/organizers`, {
+    const res = await fetch(`https://csc309website.onrender.com:3000/events/${eventId}/organizers`, {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
@@ -42,7 +42,7 @@ async function addOrganizer(eventId, utorid, setError, currentPath, navigate, se
 
 async function removeOrganizer(eventId, userId, setError, currentPath, navigate, setOrga) {
   try {
-    const res = await fetch(`http://localhost:3000/events/${eventId}/organizers/${userId}`, {
+    const res = await fetch(`https://csc309website.onrender.com:3000/events/${eventId}/organizers/${userId}`, {
       method: 'DELETE',
       headers: {
         Authorization: `Bearer ${localStorage.getItem('access_token')}`,
@@ -77,7 +77,7 @@ async function removeOrganizer(eventId, userId, setError, currentPath, navigate,
 
 async function addGuest(eventId, utorid, setError, currentPath, navigate, setGuests) {
   try {
-    const res = await fetch(`http://localhost:3000/events/${eventId}/guests`, {
+    const res = await fetch(`https://csc309website.onrender.com:3000/events/${eventId}/guests`, {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
@@ -118,7 +118,7 @@ async function addGuest(eventId, utorid, setError, currentPath, navigate, setGue
 
 async function removeGuest(eventId, userId, setError, currentPath, navigate, setGuests) {
   try {
-    const res = await fetch(`http://localhost:3000/events/${eventId}/guests/${userId}`, {
+    const res = await fetch(`https://csc309website.onrender.com:3000/events/${eventId}/guests/${userId}`, {
       method: 'DELETE',
       headers: {
         Authorization: `Bearer ${localStorage.getItem('access_token')}`,

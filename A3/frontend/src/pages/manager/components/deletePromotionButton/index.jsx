@@ -8,7 +8,7 @@ function DeletePromotionButton({ pId, setError, currentPath, setPromotions }) {
 
   async function deletePromotion(pId, setError) {
     try {
-      const res = await fetch(`http://localhost:3000/promotions/${pId}`, {
+      const res = await fetch(`https://csc309website.onrender.com:3000/promotions/${pId}`, {
         method: 'DELETE',
         headers: {
           Authorization: `Bearer ${localStorage.getItem('access_token')}`,

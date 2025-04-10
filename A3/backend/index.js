@@ -36,12 +36,7 @@ const cors = require('cors')
 
 // Set up cors to allow requests from your React frontend
 app.use(
-  cors({
-    origin: 'http://localhost:5173',
-    methods: ['GET', 'POST', 'PUT', 'DELETE', 'PATCH'],
-    allowedHeaders: ['Content-Type', 'Authorization'],
-    credentials: true,
-  })
+  cors()
 )
 
 app.use('/users', usersRouter)

@@ -54,7 +54,7 @@ function TransactionsPage() {
     setSuccess('');
     
     try {
-      const res = await fetch('http://localhost:3000/transactions', {
+      const res = await fetch('https://csc309website.onrender.com:3000/transactions', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
@@ -99,7 +99,7 @@ function TransactionsPage() {
     setSuccess('');
     
     try {
-      const res = await fetch(`http://localhost:3000/transactions/${processTransaction.transactionId}/processed`, {
+      const res = await fetch(`https://csc309website.onrender.com:3000/transactions/${processTransaction.transactionId}/processed`, {
         method: 'PATCH',
         headers: {
           'Content-Type': 'application/json',

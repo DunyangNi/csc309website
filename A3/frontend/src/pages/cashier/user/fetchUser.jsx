@@ -8,7 +8,7 @@ async function fetchUsers(queryParams, setUsers, setTotalCount, setError, curren
       return;
     }
 
-    const res = await fetch(`http://localhost:3000/users/${queryParams.id}`, {
+    const res = await fetch(`https://csc309website.onrender.com:3000/users/${queryParams.id}`, {
       method: 'GET',
       headers: {
         'Content-Type': 'application/json',
@@ -46,7 +46,7 @@ async function fetchUsers(queryParams, setUsers, setTotalCount, setError, curren
 
 async function createUser(userData, setError, currentPath, navigate) {
   try {
-    const res = await fetch('http://localhost:3000/users', {
+    const res = await fetch('https://csc309website.onrender.com:3000/users', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',

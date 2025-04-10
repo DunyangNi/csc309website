@@ -82,7 +82,7 @@ function CreatePromotionPage() {
     setLoading(true);
 
     try {
-      const res = await fetch('http://localhost:3000/promotions', {
+      const res = await fetch('https://csc309website.onrender.com:3000/promotions', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',

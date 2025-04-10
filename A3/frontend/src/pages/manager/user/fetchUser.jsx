@@ -12,7 +12,7 @@ async function fetchUsers(queryParams, setUsers, setTotalCount, setError, curren
       qp.append('sortBy', queryParams.sortBy);
       qp.append('sortOrder', queryParams.sortOrder);
     }
-    const res = await fetch(`http://localhost:3000/users?${qp.toString()}`,{
+    const res = await fetch(`https://csc309website.onrender.com:3000/users?${qp.toString()}`,{
       method: 'GET',
       headers: {
         'Content-Type': 'application/json',

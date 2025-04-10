@@ -44,7 +44,7 @@ function UpdatePromotionPage() {
       setLoading(true);
       setError('');
 
-      const res = await fetch(`http://localhost:3000/promotions/${promotionId}`, {
+      const res = await fetch(`https://csc309website.onrender.com:3000/promotions/${promotionId}`, {
         method: 'GET',
         headers: {
           'Content-Type': 'application/json',
@@ -146,7 +146,7 @@ function UpdatePromotionPage() {
     setError('');
 
     try {
-      const res = await fetch(`http://localhost:3000/promotions/${promotionId}`, {
+      const res = await fetch(`https://csc309website.onrender.com:3000/promotions/${promotionId}`, {
         method: 'PATCH',
         headers: {
           'Content-Type': 'application/json',
